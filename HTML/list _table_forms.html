@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- we will start with list  -->
+    <h1>List</h1>
+    <pre><p>basically there are two type of list in html
+            1. ordered List
+            2. unordered List </p></pre>
+    <p><u>We use ul tag for un ordered list and ol for ordered list and to fill the data inside the list we use the li
+            tag which means list item </u></p>
+    <h2>we begin with unordered list </h2>
+    <ul>
+        <li>ram</li>
+        <li>shyam</li>
+        <li>anup</li>
+        <li>rohit</li>
+        <li>kavita</li>
+    </ul>
+    <hr>
+    <h2>orderedlist</h2>
+    <ol>
+        <li>mohan</li>
+        <li>sohan</li>
+        <li>rohan</li>
+        <li>rupa</li>
+        <li>sneha</li>
+    </ol>
+
+    <!--  now from here we use to see the table tag which is use to create tables in html -->
+    <div>
+        <table>
+            <!-- we use th tag for table header -->
+
+            <!-- td tag we use to put data inside the tage tag -->
+            <!-- now we see thead tag basically thead tag is use to wrap the table head -->
+            <thead>
+                <!-- Caption tag is use to give caption in a table  -->
+                <caption>This is a table of student who score more that 80 in the maths exam</caption>
+                <th>SNo.</th>
+                <th>Name</th>
+                <th>marks</th>
+                <th>Subject</th>
+            </thead>
+            <!-- tr tag is basically use to make table row and inside that tr tag we use td to will the data inside the tr tag -->
+            <!-- no we see the tbody tag which is use to wrap the body of the table  -->
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Nikhil</td>
+                    <td>100</td>
+                    <td>Maths</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>khushbu</td>
+                    <td>90</td>
+                    <td>Maths</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Nikita</td>
+                    <td>98</td>
+                    <td>Maths</td>
+                </tr>
+            </tbody>
+            <!-- both thead and tbody dont show any change in html web page but it is use to wrap the head and as well as the body of the table and in time of styling it help a lot that we will see later on -->
+
+        </table>
+        <h3>we created this table to understand the </h3>
+        <table>
+            <thead>
+                <th colspan="2">
+                    marks with name
+                </th>
+                <th>
+                    Subject
+                </th>
+                <th>
+                    age
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        90
+                    </td>
+                    <td>
+                        Nikhil
+                    </td>
+                    <td>
+                        maths
+                    </td>
+                    <td>
+                        20
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        97
+                    </td>
+                    <td>
+                        preeto
+                    </td>
+                    <td>
+                        maths
+                    </td>
+                    <td>
+                        21
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        99
+                    </td>
+                    <td>
+                        Nikita
+                    </td>
+                    <td>
+                        maths
+                    </td>
+                    <td>
+                        22
+                    </td>
+                </tr>
+                <!-- in the out put you will see the major difference so run it by the help of live server extension present in the vscode the work or colspan attribute is to join row in this example we use to join 2 row in one and that row are name and marks -->
+            </tbody>
+        </table>
+    </div>
+     <h3>video</h3>
+    <!-- no we see use of the most useful tag called video tag  which is use to play videos in html  -->
+    <!--  for taking control on video we use control attribute -->
+    <!-- there is also attribute which is use to play your video automatically and the name of the attribute is autoplay -->
+    <!-- loop is the attribute which is use to play your video in a continue manner -->
+    <video src="video.mp4" width="230px" controls autoplay loop>Error</video><br>
+
+    <!-- now we see one more tag call iframe tag which is use to render video video mostly in market but it also use to render the website which support Embedding system 
+    note:- google do not allow embedding -->
+    <h3><u>video is rendering by the help of youtube using i frame tag</u></h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/siMCUrto9gI?si=G3Mxov9TuAt5dke8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
+    <h3><u>Bing is opening by the help of iframe tag only </u></h3>
+    <iframe src="https://www.bing.com" width="530px"></iframe>
+    
+    <!-- now we use to see the form tag which also one of the most widly use tag in html it is use to take user input   
+     -->
+     <!-- this is how we use the html form tage in form tage we also use lable for giving label and input tag to take input form user -->
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="Lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+    </form><br>
+
+    <!-- Now we go little deeper in form tag  -->
+    <form >
+        <h2>click on your fav language</h2>
+        <!-- we use value tag so that html know what is the input taken by the help of radio button -->
+        <input type="radio" name="taking fav lang" id="taking the fav lang" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" name="taking fav lang" id="taking fav lang" value="CSS">
+        <label for="css"> CSS </label><br>
+        <input type="radio" name="taking fav lang" id="taking fav lang" value="java">
+        <label for="java">java</label> <br>
+        <input type="radio" name="taking fav lang" id="taking fav lang" value="python">
+        <label for="python">Python</label>
+
+        <!-- using check box -->
+        <h2>this is done by the help of check box attribute in input tag</h2>
+        <input type="checkbox" name="taking fav lang" id="taking the fav lang" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="checkbox" name="taking fav lang" id="taking fav lang" value="CSS">
+        <label for="css"> CSS </label><br>
+        <input type="checkbox" name="taking fav lang" id="taking fav lang" value="java">
+        <label for="java">java</label> <br>
+        <input type="checkbox" name="taking fav lang" id="taking fav lang" value="python">
+        <label for="python">Python</label>
+
+        <!-- the resion we  use the radio button that is one at a time we can only use to use or fill the single radio button and in check box we can use multiple checkbox to fill at a time -->
+        
+        <!-- now we see the submit button in form tag -->
+        <h2>using submit button</h2>
+        <label for="enter your name " aria-placeholder="enter your name"></label>
+        <input type="text" name="name" id="username">
+        <input type="submit" name="submit" id="submit">
+
+    </form>
+    
+</body>
+
+</html>
