@@ -1,37 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Form number 1</h1>
-    <h2>Event Registration</h2>
-    <form >
-        <label for="username">Name:</label> <br>
-        <input type="text" id="username"> <br> <br>
-        <label for="email">Email:</label> <br>
-        <input type="email" id="email"><br><br>
-        <label for="phone">Phone:</label> <br>
-        <input type="tel" id="phone"> <br> <br>
-        <label for="occupation">Occupation:</label> <br>
-        <select name="occupation" id="occupation">
-            <option value="student">Student</option>
-            <option value="teacher">Teacher</option>
-            <option value="others">Others</option>
-        </select>
-        <br> <br>
-        <p>Topic of Interest </p>
-        <input type="checkbox" name="interest" id="interest"><br>
-        <label for="interest">HTML</label> <br><br>
-        <input type="checkbox" name="interest" id="interest"><br>
-        <label for="interest">CSS</label><br><br>
-        <input type="checkbox" name="interest" id="interest"><br>
-        <label for="interest">JS</label><br><br>
-        <label for="comments">Comments:</label><br>
-        <textarea name="comments" id="comments" cols="50px" rows="5px"></textarea>
-        <input type="button" value="Register">
+    <h3>Event Registration</h3>
+    <form>
+      <label for="username">Name:</label> <br />
+      <input type="text" id="username" /> <br />
+      <br />
+      <label for="email">Email:</label> <br />
+      <input type="email" id="email" /><br /><br />
+      <label for="phone">Phone:</label> <br />
+      <input type="tel" id="phone" /> <br />
+      <br />
+      <label for="occupation">Occupation:</label> <br />
+      <select name="occupation" id="occupation">
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+        <option value="others">Others</option>
+      </select>
+      <br />
+      <br />
+      <p>Topic of Interest</p>
+      <input type="checkbox" name="interest" id="interest" /><br />
+      <label for="interest">HTML</label> <br /><br />
+      <input type="checkbox" name="interest" id="interest" /><br />
+      <label for="interest">CSS</label><br /><br />
+      <input type="checkbox" name="interest" id="interest" /><br />
+      <label for="interest">JS</label><br /><br />
+      <label for="comments">Comments:</label><br />
+      <textarea name="comments" id="comments" cols="50px" rows="5px"></textarea>
+      <input type="button" value="Register" />
     </form>
-</body>
+    <br><br><br>
+    <h2>This is my form number 2</h2>
+    <h3>Job Application</h3>
+    <form>
+        <label for="username">Enter your name</label>
+        <input type="text" id="username" >
+        <br> <br>
+        <label for="email">Enter your email id</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <br>
+        <label for="phonenumber">Enter your phone number</label>
+        <input type="tel" name="phone" id="phonenumber">
+        <br><br>
+        <label for="resume">Resume</label>
+        <input type="file" name="resume" id="resume"> <br> <br>
+        <label for="experience">Experience</label><br>
+        <input type="number" name="experience" id="experience" min="1" max="10">
+        <fieldset>
+            <legend>Skills</legend>
+            <input type="checkbox" name="skills" id="skills">
+            <label for="HTML">HTML</label>
+            <input type="checkbox" name="skills" id="skills">
+            <label for="CSS">CSS</label>
+            <input type="checkbox" name="skills" id="skills">
+            <label for="JavaScript">JavaScript</label>
+        </fieldset>
+        <br>
+        <br>
+        <label for="HighestEducation">Highest Education</label>
+        <select name="HighestEducation" id="HighestEducation">
+            <option value="HighSchool">High School</option>
+            <option value="Graduation">Graduation</option>
+            <option value="PostGraduation">Post Graduation</option>
+        </select>
+        <br>
+        <br>
+        <fieldset>
+            <!-- if you want that at a time only one radio button can be selected then we use same name value in radio button tag  -->
+            <legend>Availability</legend>
+            <label for="fulltime">Full time</label>
+            <input type="radio" name="time" id="fulltime">
+            <label for="parttime">Part time</label>
+            <input type="radio" name="time" id="parttime">
+        </fieldset>
+        <br><br>
+        <label for="comments">Additional Comments</label><br>
+        <textarea name="comments" id="comments" cols="50px" rows="5px"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+  </body>
 </html>
