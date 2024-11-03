@@ -1,0 +1,43 @@
+p{
+    /* font style property use to set the style of fonts we use */
+    font-style: italic;
+     
+    /* now suppose we can to change the boldness of my font then i use */
+    font-weight: 900;
+
+    /* now we set the font family */
+    /* the way we write  */
+    font-family: cursive;
+
+    /* font size basically use to set the font size */
+    font-size: 40px;
+
+    /* line Gap between two fonts */
+    line-height: 90px;
+
+    /* need more font type go to google fonts form there we can import new fonts what we want */
+}
+#firstPara{
+    /* named color */
+    /* setting background color */
+    background-color: yellow;
+    /* color basically use to set the text color */
+    color: brown;
+}
+#secondPara{
+    /* setting background color using rgb */
+    background-color: rgb(48, 153, 7);
+
+}
+#thirdPara{
+    /* using rgba a is stand for alpha it controls the transperency of color*/
+    background-color: rgba(221, 17, 211, 0.63)}
+
+.firstclass{
+    /* using hexadecimal value color */
+    background-color: #c99810d7;
+}
+
+#forpara{
+    background-color: hsl(120, 100%,50%);
+}
