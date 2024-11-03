@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1 {
+  /* we can also set the width */
+  width: 350px;
+
+  /* we can set the height */
+  height: 130px;
+
+  background-color: aquamarine;
+  /* border-style: solid;
+    border-width: 1px;
+    border-color: red; */
+
+  /* border short hand notation */
+  border: 3px solid red;
+
+  /* for getting the rounded corner */
+  /* /* border-radius: 10px; */
+
+  /* suppose we want one side to be rounded */
+  /* border-top-left-radius: 50px; */
+
+  /* suppose we want border in top only */
+  /* border-top: 60px; */
+}
+.firstclass {
+  background-color: blue;
+  border: 3px solid red;
+  width: 350px;
+  /* content between border and content is called padding */
+  /* padding: 50px; */
+
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  /* padding short hand notation */
+  /* padding: 50px 50px 50px 50px; */
+
+  /*  value top/bottom left/right */
+  padding: 20px 4px;
+
+  /* short hand padding */
+
+  /* gap between two boxes is called margin */
+  /* short hand margin */
+  /* margin: 90px; */
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  /* margin short hand notation */
+  /* margin:10px 10px; */
+}
+.secondclass {
+  background-color: brown;
+  border: 3px solid red;
+  width: 350px;
+}
+.thirdclass {
+  background-color: chartreuse;
+  border: 3px solid red;
+  width: 350px;
+}
