@@ -1,0 +1,45 @@
+.firstdiv{
+    border: 1px solid red;
+    width: 10px;
+    padding: 20px;
+    margin-bottom: 100px;
+
+    /* there is one more property which is called inline-block which is use to display inline and we can use the block element property means the width,height and margin top and margin bottom */
+    
+    display: inline-block;
+    
+    
+    
+}
+.seconddiv{
+    border: 1px solid red;
+    width: 10px;
+    margin-top: 100px;
+    
+    padding: 20px;
+    /* we can also set the block element to inline and inline to block */
+    /* display property is use to set the display type of the element */
+    /* display: inline; */
+    display: inline;
+    /* now this turns to inline element */
+    
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    /* use of box-sizing property :- it is use to set the box size of the element if we don't use this property the element size will be according to the content means margin + padding + border + width + height and it will cover al lot of space in the page so we use this property */
+    /* box-sizing: border-box; */
+    box-sizing: border-box;
+}
+
+/* as we know span is a inline element  */ 
+/* now we convert this to block element */
+span{
+    display: block;
+    border: 1px solid red;
+    width: 10px;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+
