@@ -1,0 +1,44 @@
+.container{
+   border: 2px solid black;
+   height: 3000px;
+   background-color: aquamarine;
+}
+img{
+    width: 300px;
+    margin-left: 20px;
+}
+*{
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+}
+.imgage1{
+    /* basically position property is use to set the position of an image based on its nearest parent tag here div .container is the nearest parent tag */
+    /* by default the position tag is static  */
+    /* when we set position tag as relative to get the freedom to move our image with a drawback that after image move from its original space , the space left will and not in use  */
+    position: relative;
+    /* it use to move the image 100px form top as we can set for left - right - bottom as well */
+    top: 100px;
+}
+.imgage2{
+    /* same as relative the absolute also give use freedom to move our image here and there but one key difference that the space of image which we are moving is taken by another image  */
+    position: absolute;
+    top: 500px;
+    
+}
+.imgage3{
+    /* so the funda behind the sticky is it sticks where we place inside its parent container after parent container scrolled up its also scrolled up */
+    position: sticky;
+    top: 400px;
+}
+.imgage4{
+    /* last position property is fixed as it name fixed it is fixed no matter we are dealing with multiple container its position is always fix */
+    position: fixed;
+    /* left: 1500px; */
+    top: 800px;
+    left: 1575px;
+}
+.container2{
+    height: 3000px;
+    background-color: chartreuse;
+}
