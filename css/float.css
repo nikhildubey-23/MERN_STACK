@@ -1,0 +1,35 @@
+/* float , clear and over flow property */
+.img1{
+    width: 15rem;
+    float: right;
+}
+p{
+    font-size: 2rem;
+}
+.img2{
+    width: 15rem;
+    float: left;
+}
+.img3{
+    width: 15rem;
+    float: right;
+}
+.img4{
+    width:15rem;
+    float: right;
+}
+/* in output we saw that image is side by side but we don't what that we want img4 lies below the img 3 for that we use the clear property  */
+.img4{
+    clear:right
+}
+
+/* over flow */
+.container{
+    width:50vh;
+    height: 50vh;
+    overflow: auto;
+    border: 2px solid black;
+}
+.container p {
+    margin: 20px;
+}
