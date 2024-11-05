@@ -1,0 +1,50 @@
+.box{
+    border: 2px solid black;
+    width: 50%;
+}
+.parent{
+    border:2px solid red;
+    background-color: beige;
+    width: 50%;
+}
+.child{
+    border:2px soild blue;
+    background-color: aquamarine;
+    width: 20%;
+}
+
+.container{
+    border: 2px solid black;
+    height: 100vh;
+    background-color: aquamarine;
+    width:50vw
+}
+
+.box1{
+    border: 2px solid black;
+    font-size:100px
+}
+
+
+/* relative units */
+
+
+ .container2{
+    border: 2px solid black;
+    font-size: 10px;
+ }
+ /* because we use em unit it work like this 10px * 5em = 50px so box2 font size will be 50px */
+ .box2{
+    font-size: 5em;
+ }
+
+ /* relative units rem */
+
+ /* rem is unit that depends on the root font size and root(html) font size is 16 px by default */
+ .firstpara{
+    border: 2px solid black;
+    font-size: 2rem;
+    /* 16px * 2 = 32px */
+ }
+
+ /* ignor absolute units */
