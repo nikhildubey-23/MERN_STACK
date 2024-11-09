@@ -1,0 +1,83 @@
+Here’s a comprehensive Flexbox cheat sheet in CSS that covers the essential properties for building flexible layouts:
+
+### Flex Container Properties
+To make an element a flex container, apply `display: flex;` to it. This container will then use all flex properties.
+
+
+.container {
+  display: flex;          /* Enables flexbox layout */
+  flex-direction: row;    /* Defines main axis direction: row (default), row-reverse, column, column-reverse */
+  flex-wrap: nowrap;      /* Controls wrapping of flex items: nowrap (default), wrap, wrap-reverse */
+  justify-content: flex-start; /* Aligns items along main axis: flex-start, flex-end, center, space-between, space-around, space-evenly */
+  align-items: stretch;   /* Aligns items along cross axis: stretch (default), flex-start, flex-end, center, baseline */
+  align-content: stretch; /* Aligns flex lines (if wrapped): stretch (default), flex-start, flex-end, center, space-between, space-around */
+  gap: 10px;              /* Adds spacing between items (gap, row-gap, column-gap) */
+}
+
+
+### Flex Item Properties
+Each item within a flex container can have individual properties to control its size and order.
+
+
+.item {
+  flex-grow: 0;          /* Allows item to grow to fill space: 0 (default), positive numbers (1+) for growth factor */
+  flex-shrink: 1;        /* Allows item to shrink to fit space: 1 (default), 0 disables shrinking */
+  flex-basis: auto;      /* Sets initial size before free space is distributed: auto (default), or size (px, %, etc.) */
+  flex: 1;               /* Shorthand for `flex-grow flex-shrink flex-basis` */
+  align-self: auto;      /* Aligns individual item along cross axis: auto (default), flex-start, flex-end, center, baseline, stretch */
+  order: 0;              /* Controls item order within container: 0 (default), negative or positive integers */
+}
+
+
+### Examples
+
+#### Basic Horizontal Layout
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+#### Vertical Centering
+To center items vertically, set the direction to `column`:
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+
+#### Responsive Layout with Flex Wrap
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.item {
+  flex: 1 1 200px; /* Grow, shrink, and set a minimum width */
+}
+
+
+#### Justify Content Options (Main Axis)
+- `flex-start` - Items align to the start.
+- `flex-end` - Items align to the end.
+- `center` - Items align to the center.
+- `space-between` - Items are evenly spaced; first item is at the start, last at the end.
+- `space-around` - Items are evenly spaced with space around each item.
+- `space-evenly` - Items are evenly spaced with equal space between and around items.
+
+#### Align Items Options (Cross Axis)
+- `stretch` - Items stretch to fill container (default).
+- `flex-start` - Items align to the start.
+- `flex-end` - Items align to the end.
+- `center` - Items align to the center.
+- `baseline` - Items align along their baselines.
+
+This cheat sheet should cover most layout needs using Flexbox! 
