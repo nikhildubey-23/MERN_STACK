@@ -1,0 +1,168 @@
+ CSS Selectors
+1. Universal Selector: * { ... }
+2. Element Selector: p { ... }
+3. Class Selector: .className { ... }
+4. ID Selector: #idName { ... }
+5. Attribute Selector: [type="text"] { ... }
+6. Pseudo-class: a:hover { ... }
+7. Pseudo-element: p::before { content: "Start"; }
+8. Child Selector: div > p { ... }
+9. Descendant Selector: div p { ... }
+10. Adjacent Sibling: h1 + p { ... }
+11. General Sibling: h1 ~ p { ... }
+
+
+
+ CSS Box Model
+1. Padding: padding: 10px;
+2. Border: border: 1px solid #000;
+3. Margin: margin: 10px;
+4. Box Sizing: box-sizing: border-box;
+5. Width & Height:
+   - width: 100px;
+   - height: 100px;
+6. Overflow: 
+   - overflow: hidden;
+   - overflow-x: auto;
+   - overflow-y: scroll;
+
+
+
+ Typography
+1. Font Family: font-family: Arial, sans-serif;
+2. Font Size: font-size: 16px;
+3. Font Weight: 
+   - font-weight: normal;
+   - font-weight: bold;
+4. Font Style: font-style: italic;
+5. Text Align: text-align: center;
+6. Text Decoration: text-decoration: underline;
+7. Text Transform: text-transform: uppercase;
+8. Line Height: line-height: 1.5;
+9. Letter Spacing: letter-spacing: 2px;
+10. Word Spacing: word-spacing: 5px;
+
+
+
+ Background & Colors
+1. Background Color: background-color: #333;
+2. Background Image: background-image: url('image.jpg');
+3. Background Position: background-position: center;
+4. Background Size: 
+   - background-size: cover;
+   - background-size: contain;
+5. Background Repeat: background-repeat: no-repeat;
+6. Opacity: opacity: 0.5;
+7. Color: color: #fff;
+
+
+
+ Borders & Outline
+1. Border: border: 1px solid #000;
+2. Border Radius: border-radius: 10px;
+3. Outline: outline: 2px solid blue;
+4. Outline Offset: outline-offset: 5px;
+5. Box Shadow: box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+
+
+
+ Flexbox Layout
+css
+.container {
+  display: flex;
+  flex-direction: row; /* row, row-reverse, column, column-reverse */
+  justify-content: center; /* flex-start, flex-end, center, space-between, space-around */
+  align-items: stretch; /* flex-start, flex-end, center, baseline, stretch */
+  flex-wrap: wrap; /* nowrap, wrap, wrap-reverse */
+  gap: 10px; /* Space between items */
+}
+.item {
+  flex-grow: 1; /* Item growth */
+  flex-shrink: 1; /* Item shrinking */
+  flex-basis: 100px; /* Default item size */
+  align-self: center; /* Individual alignment */
+}
+
+
+
+
+ Grid Layout
+css
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+  grid-template-rows: 100px auto; /* 2 rows */
+  grid-gap: 10px; /* Gap between items */
+  justify-items: center; /* Alignment */
+  align-items: start;
+}
+.item {
+  grid-column: span 2; /* Spanning columns */
+  grid-row: span 1; /* Spanning rows */
+}
+
+
+
+
+ Positioning
+1. Static: position: static;
+2. Relative: position: relative; top: 10px; left: 20px;
+3. Absolute: position: absolute; top: 50px; left: 100px;
+4. Fixed: position: fixed; bottom: 10px; right: 10px;
+5. Sticky: position: sticky; top: 0;
+
+
+ Animations & Transitions
+1. Transition: transition: all 0.3s ease;
+2. Animation:
+   css
+   @keyframes slide {
+     0% { transform: translateX(0); }
+     100% { transform: translateX(100px); }
+   }
+   .animate {
+     animation: slide 1s ease-in-out infinite;
+   }
+   
+
+
+
+ Transformations
+1. Rotate: transform: rotate(45deg);
+2. Scale: transform: scale(1.5);
+3. Translate: transform: translate(50px, 20px);
+4. Skew: transform: skew(10deg, 20deg);
+
+
+
+ Responsive Design
+1. Media Query:
+   css
+   @media (max-width: 768px) {
+     .container { flex-direction: column; }
+   }
+   
+2. Viewport Units:
+   - width: 100vw;
+   - height: 100vh;
+
+
+
+ Miscellaneous
+1. Cursor: cursor: pointer;
+2. Z-Index: z-index: 10;
+3. Visibility: visibility: hidden;
+4. Display: 
+   - display: none;
+   - display: inline;
+   - display: inline-block;
+   - display: flex;
+5. Float: float: left;
+6. Clearfix:
+   css
+   .clearfix::after {
+     content: "";
+     display: block;
+     clear: both;
+   }
+   
