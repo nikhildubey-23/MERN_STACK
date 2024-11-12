@@ -1,0 +1,74 @@
+/* syntax of global variable */
+:root{
+    --bl-color:black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* there are two type of shadow box shadow and box shadow */
+.container{
+    border: 2px solid black;
+    height:850px;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.box1{
+    /* syntax for to create coustom varibale */
+
+    /* this is a syntax of block variable */
+
+    --aqm-color : aquamarine;
+
+
+    background-color: var(--aqm-color);
+    width: 330px;
+    height:530px;
+    border: 3px solid var(--bl-color);
+    margin: 5px;
+    padding:5px;
+    /* simplest shadow for in which we have to set x-offset y-offset and color of shadow */
+    /* box-shadow: 5px 5px black; */
+    /* for to change the direction of shadow we can also give the negative indexing in x and y offset*/
+
+    /* Second Method TO give the shadow in which we tell the blur radius when we set the blur radius so we write in such a way x-offset y-offset blur-radius color */
+
+    /* box-shadow: 5px 5px 20px blue; */
+
+    /*third Method TO give the shadow in which we tell the spared radius including blur radius when we set the blur radius so we write in such a way x-offset y-offset blur-radius color */ 
+
+    /* box-shadow: 5px 5px 20px 10px rgba(62, 62, 124, 0.894); */
+
+    /* we can also set shadow in inner side of the container using inset */
+
+    /* box-shadow:inset 5px 5px 20px 10px rgba(62, 62, 124, 0.894); */
+
+    /* we can also add multiple shadow separated by comma */
+
+    box-shadow:inset 5px 5px 20px 10px rgba(62, 62, 124, 0.894) ,  5px 5px 20px 10px rgba(166, 35, 24, 0.894) ;
+
+    
+}
+img{
+    height: 50%;
+    width: 95%;
+    margin: 2px;
+}
+
+#head1{
+    /* this is a normal way to give text shadow we define x-offset y-offset and the color */
+    /* text-shadow: 4px 4px yellow; */
+
+    /* we can also give the blur radius including x and y offset */
+    /* text-shadow: 4px 4px 7px yellow; */
+
+    /* we can also add multiple text shadow */
+    text-shadow: 4px 4px 7px yellow ,4px 4px 7px orange ;
+
+
+
+}
