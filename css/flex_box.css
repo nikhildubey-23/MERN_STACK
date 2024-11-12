@@ -1,0 +1,73 @@
+/* use for layout */
+.container{
+    background-color: beige;
+    border: 5px solid black;
+    display: flex;
+    height: 1200px;
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+
+    /* short hand notation */
+    /* in flex flow we tell two things one order of flow (col/row) or we have to set flex wrap property at the same time  */
+    flex-flow: row wrap;
+
+    /* content distribution */
+    /* justify-content: space-between; */
+
+    /* justify-content: space-around; */
+
+    /* justify-content: space-evenly; */
+
+    /* content alignment */
+    /* justify-content: center; */
+
+    /* align-items: center; */
+
+    /* we got the space when we do wraping to elemenate this spacing use use aling-content property */
+    /* align-content: start; */
+
+    /* flex item */
+    
+
+
+}
+.box{
+    height: 200px;
+    width: 200px;
+    border: 2px solid brown;
+    margin: 10px;
+    padding: 2px;
+}
+#box1{
+    background-color: red;
+    /* order property is use to change the order of flex */
+    /* order:500 ; */
+
+    /* use to control the shrink speed */
+    flex-shrink: 4;
+    /* flex-grow: 2; */
+    align-self: center;
+
+    /* setting up the box dimention based on basis */
+    /* flex-basis: 400px; */
+
+    /* short hand notation for flex-grow , flex-shrink,flex-base */
+    /* flex: 2 4 5; */
+}
+#box2{
+    background-color: blue;
+    /* flex-grow: 2; */
+}
+#box3{
+    background-color: yellow;
+    /* flex-grow: 2; */
+
+}
+#box4{
+    background-color: green;
+    /* flex-grow: 2; */
+} 
