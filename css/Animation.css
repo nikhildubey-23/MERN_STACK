@@ -1,0 +1,129 @@
+.container{
+    border: 5px solid black;
+    box-sizing: border-box;
+    background-color: beige;
+    width: 100vw;
+    height: 90vh;
+    padding: 7px;
+}
+.box1{
+    box-sizing: border-box;
+    width: 20%;
+    height: 5%;
+    border: 2px solid black;
+    background-color: blue;
+    border-radius: 5px;
+    position:relative;
+    margin-top:0.25%;
+    position:relative;/*because we want to change the top,bottom,left,right property in animation*/
+
+    /* a processes in which a element changes from one property to another is called Animation */
+
+    /* Our First step is to give the animation name */
+    animation-name: rightMovement;
+
+    /* for to set time in between starting to ending one style to another style we set animation-duration */
+
+    animation-duration: 10s;
+
+    /* how many time do we want to do the animation */
+
+    animation-iteration-count: infinite;
+
+    /* how much time i have to wait before starting the animation */
+
+    animation-delay: 1s;
+
+    /* to control the speed of animation respect to time */
+    animation-timing-function: linear;
+
+    /* we can also control the speed of animation use bezier curve */
+    /* animation-timing-function: cubic-bezier(0.1,0.7,0.1,0.1); */
+
+    /* we can also give the direction to our animation using animation direction property */
+    animation-direction:alternate; /*there are some more property*/
+
+    /* now last but no not the least property that is animation-fill-mode which use to conrol what to do before start and what to do after finish */
+
+    /* animation-fill-mode: forwards; */
+
+    /* animation short hand notation */
+    /* syntax :- duration , easing-function (timing function), delay , iteration count , direction, fill-mode , play-state , name */
+    /* animation: 10s linear 1s infinite alternate none running rightMovement; */
+
+}
+
+/* after we give the name we use to create the keyframe */
+@keyframes rightMovement {
+    /* initial state */
+    from{
+        top:0;
+        left:0;
+    }
+    /* destination state */
+    to{
+        top:0;
+        left:85%;
+    }
+}
+
+/* same we do for box 2 also */
+.box2{
+    width: 20%;
+    height: 5%;
+    border: 2px solid black;
+    background-color: blue;
+    border-radius: 5px;
+    position:relative;
+    box-sizing: border-box;
+    margin-bottom:20%;
+    position:relative;
+    animation: 10s linear 1s infinite alternate none running leftMovement;
+}
+
+/* we want to move this box left to right */
+@keyframes leftMovement {
+    /* initial state */
+    from{
+        top:84%;
+        left:85%;
+    }
+    /* destination state */
+    to{
+        top:84%;
+        left:0%;
+    }
+}
+
+.circle{
+    background-color: blue;
+    position: relative;
+    border-radius: 100px;
+    width: 4%;
+    height: 9%;
+    animation: 10s linear 1s infinite alternate-reverse none running circleMovement;
+}
+
+@keyframes circleMovement {
+    0%{
+        top: 12%;
+        left:25%;
+    }
+    25%{
+        top:50%;
+        left:50%
+    }
+    50%{
+        top:1%;
+        left:75%;
+    }
+    100%{
+        top:20%;
+        left:100%   
+    }
+}
+
+*{
+    margin: 0;
+    padding:0;
+}
