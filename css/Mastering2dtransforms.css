@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    border:2px solid red;
+    background-color: aliceblue;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    border:3px solid black;
+    display: flex;
+    height: 50vh;
+    width: 50vw;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    transition: all linear 2s 1s ;
+}
+.box:hover{
+    /* this is how we can set the transform property inside sudo class now for to control the transform speed we use transition function too */
+    /* transform: rotate(360deg); */
+
+    /* it also support the negetive value in rotate  */
+
+    /* some more property also exist in transform  */
+
+    /* scaling is use to increase the size of the box here value is two so it will increase the value of the box twice */
+    transform: scale(2);
+
+    /* if i do same but now i will give the smaller value then it become smaller */
+    /* transform: scale(0.5); */
+
+    /* now we see how to tilt the box using skew function  */
+    /* transform: skew(-20deg); */
+    transform: skew(20deg);
+
+    /* it also support the negetive value in skew */
+
+    /* one of the most commonly use  property that is translate which basically use to move on x y and z direction*/
+    /* syntax :- transform : translate(x,y); in place of x and y we provide the value 
+    we can also provide single value to move on a single direction 
+    syntax:- transform:translate(x);*/
+    /* transform: translate(100px,200px);
+    transform: translate(200px); */
+    /* now for to set in y direction 
+    syntax:- transform: translate(0px,200px); */
+    /* transform: translate(0px,200px) */
+
+    /* skewy is one of the property which use to titl box in y direction same skewX is also there which use to tilt the box in x direction */
+    /* transform:skewY(20deg); */
+
+    transform:skewX(20deg)
+}
+p{
+    font-size: 150%;
+}
