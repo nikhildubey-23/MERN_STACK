@@ -29,12 +29,6 @@
   margin-right: 16px;
   text-decoration: none;
 }
-@media (min-width:410) and (max-width:915){
-    .navitem a{
-        font-size:20px ;
-    }
-    
-}
 .maincontainer {
   display: flex;
   justify-content: center;
