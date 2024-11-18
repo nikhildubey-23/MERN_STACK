@@ -19,13 +19,13 @@
   align-items: center;
 }
 .logo {
-  font-size: xx-large;
+  font-size: 2.5rem;
   color: white;
 }
 .navitem a {
   color: white;
-  font-weight:bold;
-  font-size: 1vw;
+ 
+  font-size: 2.3rem;
   margin-right: 16px;
   text-decoration: none;
 }
@@ -79,4 +79,13 @@ img{
     height:97%;
     margin:5.5px;
     border-radius: 5px;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerclass{
+  color: white;
+  font-size: 2rem;
 }
