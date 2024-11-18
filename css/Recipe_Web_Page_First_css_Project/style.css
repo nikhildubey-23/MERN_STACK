@@ -52,7 +52,7 @@
   border-radius: 30px;
   box-shadow: 2px 2px 7px black;
 }
-.Rasgullabox {
+.Gulabjamunbox {
   /* flex-wrap: wrap-reverse; */
   display: flex;
   margin-top: 5%;
@@ -72,7 +72,7 @@
     rgba(0, 212, 255, 1) 100%
   );
 }
-.contentRasgulla {
+.contentGulabjamun {
   box-sizing: border-box;
   width: 80%;
   height: 97%;
