@@ -24,7 +24,7 @@
 }
 .navitem a {
   color: white;
- 
+
   font-size: 2.3rem;
   margin-right: 16px;
   text-decoration: none;
@@ -53,39 +53,44 @@
   box-shadow: 2px 2px 7px black;
 }
 .Rasgullabox {
-    /* flex-wrap: wrap-reverse; */
-    display: flex;
-    margin-top: 5%;
-    border-radius: 5px;
+  /* flex-wrap: wrap-reverse; */
+  display: flex;
+  margin-top: 5%;
+  border-radius: 5px;
   border: 1px solid black;
   width: 70vw;
   height: 75vh;
 }
-.footer{
-    width: 100vw;
-    height: 5vh;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(28,9,121,1) 63%, rgba(0,212,255,1) 100%); 
+.footer {
+  width: 100vw;
+  height: 5vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(28, 9, 121, 1) 63%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
-.contentRasgulla{
-    box-sizing: border-box;
-    width: 80%;
-    height: 97%;
-    background-color: red;
-    margin: 5.5px;
+.contentRasgulla {
+  box-sizing: border-box;
+  width: 80%;
+  height: 97%;
+  background-color: red;
+  margin: 5.5px;
 }
-img{
-    width: 97%;
-    height:97%;
-    margin:5.5px;
-    border-radius: 5px;
+img {
+  width: 97%;
+  height: 97%;
+  margin: 5.5px;
+  border-radius: 5px;
 }
-.footer{
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.footerclass{
+.footerclass {
   color: white;
   font-size: 2rem;
 }
