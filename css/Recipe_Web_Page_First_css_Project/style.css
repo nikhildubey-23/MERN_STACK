@@ -75,15 +75,16 @@
 .contentGulabjamun {
   box-sizing: border-box;
   width: 80%;
-  height: 97%;
+  height: 98%;
   background-color: red;
   margin: 5.5px;
 }
 img {
   width: 97%;
-  height: 97%;
-  margin: 5.5px;
+  height: 98%;
+  margin:6px;
   border-radius: 5px;
+  box-shadow: 2px 2px 5px black;
 }
 .footer {
   display: flex;
