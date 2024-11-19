@@ -73,7 +73,7 @@ p {
   border-radius: 30px;
   box-shadow: 2px 2px 7px black;
 }
-.Gulabjamunbox {
+.dishbox {
   /* flex-wrap: wrap-reverse; */
   display: flex;
   margin-top: 5%;
@@ -93,7 +93,7 @@ p {
     rgba(0, 212, 255, 1) 100%
   );
 }
-.contentGulabjamun {
+.dishcontent {
   box-sizing: border-box;
   width: 80%;
   height: 98%;
