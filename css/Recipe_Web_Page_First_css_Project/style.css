@@ -33,13 +33,12 @@ p {
     rgba(2, 0, 36, 1) 0%,
     rgba(9, 9, 121, 1) 22%,
     rgba(0, 212, 255, 1) 100%
-    
   );
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position:fixed;
+  position: fixed;
 }
 .logo {
   font-size: 2.5rem;
@@ -90,7 +89,6 @@ p {
   overflow: scroll;
 }
 .footer {
-  
   width: 100vw;
   height: 20vh;
   background: rgb(2, 0, 36);
@@ -103,11 +101,10 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-.imagecontent{
+.imagecontent {
   margin: auto;
-  height:60vh;
+  height: 60vh;
 }
 .dishcontent {
   box-sizing: border-box;
@@ -129,15 +126,14 @@ img {
   font-size: 2rem;
 }
 
-@media (max-width:860px) {
-
+@media (max-width: 860px) {
   .logo {
     font-size: 20px;
     color: white;
   }
   .navitem a {
     color: white;
-  
+
     font-size: 18px;
     margin-right: 16px;
     text-decoration: none;
@@ -175,5 +171,4 @@ img {
     border-radius: 5px;
     box-shadow: 4px 4px 10px black;
   }
-  
 }
