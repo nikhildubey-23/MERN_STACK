@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    height: 100vh;
+    width: 100vw;
+
+}
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: blueviolet;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,1fr);
+    padding: 30px;
+    border:5px solid white;
+
+    /* now suppose i want to arrange the item in row wise at the center then is will use the property justify-content */
+    /* justify-content: center; more other property are there which we saw in flex also like start end center etc */
+
+    /* now to move  content in center in y direction or if you want to move content in y direction in the y axis  we can use the align-content property there also there are many property start , end , center and etc same as justify content */
+    /* align-content: center; */
+
+    /* suppose we want all the items use to shift at the end yes it is same as justify-self in justify-self only one item will move in which we apply justify-self but if we use the justify-items then it will move all the items this will work in x axis  */
+
+    /* justify-items: end; */
+
+    /* for to move in y axis we can also use the align-items */
+    /* align-items: end; */
+
+
+    /* if we can to use both at the same time */
+    place-items: center; /*it will apply for both the x and y axis*/  
+}
+.box{
+    /* now suppose we want to move only single box then we use the property */
+    /* justify-self: start; here also more property are there start end and center  and stretch and more */
+
+    /* now suppose we want to move our item in y direction a single item then we use the align-self  property which is having three values start end center and stretch  */
+    /* align-self:center; */
+
+    /* if we combine justify self and align self together then we have one more property that is place-self  */
+    /* place-self:center; it will search horizontally and vertically center and place the item */
+     
+    height:100px;
+    width:100px;
+    background-color: rgb(46, 93, 46);
+    border:5px solid black;
+
+
+}  
