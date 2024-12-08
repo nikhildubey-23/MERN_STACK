@@ -377,3 +377,63 @@ body {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.textimonial-container{
+  background-color: var(--background-color);
+  padding: 0 2rem; 
+  margin: 0 auto;
+  max-width: 1280px;
+  align-items: center;
+  text-align: center;
+}
+.textimonial-content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.textimonial-title{
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.textimonial-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  grid-gap: 2rem;
+  
+}
+.textimonial-card{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(147, 145, 145, 0.1);
+  padding: 1.2rem;
+  gap: 1rem;
+  transition: transform 0.3s ease , box-shadow 0.3s ease;
+  
+}
+.textimonial-card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid blue;
+}
+.textimonial-avtar img{
+  width: 5rem;
+  height: 5rem;
+}
+.textimonial-text{
+  font-size: 0.6rem;
+  color: #555;
+  font-weight: bold;
+
+}
+.textimonial-name{
+  font-size :1rem;
+  color: var(--primary-color);
+}
+.textimonial-desc{
+  font-size: 0.875rem;
+  color: #777;
+
+}
