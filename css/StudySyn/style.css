@@ -437,3 +437,142 @@ body {
   color: #777;
 
 }
+.newsletter-container{
+  background-color:var(--background-color) ;
+  padding: 2rem;
+  max-width: 1280px;
+  height: 55vh;
+  margin:0 auto ;
+}
+.newsletter-content{
+  display: flex;
+  flex-direction: row;
+  background-color: gainsboro;
+  height: 100%;
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+.news-left{
+  display: none;
+  height: 100%;
+  width: 50%;
+}
+.news-left img{
+  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.2rem;
+}
+.news-right{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+} 
+.news-title{
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.news-info{
+  padding: 0 3rem;
+}
+.news-desc{
+  text-align: left;
+  color: #777;
+}
+.news-form{
+  padding: 0 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  gap: 0.6rem;
+}
+.news-email{
+  background-color: var(--background-color);
+  /* width: 100%; */
+  color: #333;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+}
+.news-email:focus{
+  border-color: #2563eb;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.news-send-button{
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+}
+.news-send-button:hover{
+  background-color:var(--link-color) ;
+}
+.privacy-policy{
+  padding: 0 3rem;
+  font-size: 0.76rem;
+  color: #777;
+}
+.news-link{
+  text-decoration: underline;
+
+}
+@media (min-width:640px) {
+  .news-left{
+    display: block;
+  }
+
+}
+@media (max-width:983px) {
+  .news-left{
+    display: none;
+  }
+  .newsletter-content {
+    display: flex;
+    flex-direction: column;
+    height: 337px;
+    align-items: center;
+  }
+  .news-right{
+    width: 100%;
+    gap: 0.5rem;
+    padding: 80px;
+    
+  }
+
+}
+@media (max-width:432px) {
+  .news-form {
+    padding: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    gap: 0.5rem;
+  }
+  .news-title{
+    font-size: 1.3rem;
+  }
+  .news-desc{
+    font-size: 0.8rem;
+  }
+  .news-send-button{
+    margin: 0 auto;
+  }
+  .news-email{
+    margin: 0px auto;
+  }
+  .privacy-policy {
+    padding: 0px 1.2rem;
+    font-size: 0.6rem;
+    color: #777;
+    margin-bottom: 26px;
+  }
+}
