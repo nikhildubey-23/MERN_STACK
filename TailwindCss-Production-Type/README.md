@@ -50,7 +50,7 @@ This guide explains the steps to set up a basic Tailwind CSS project with a clea
 1. Open the `tailwind.config.js` file located in the root directory.
 2. Modify the `content` property to enable Tailwind CSS to locate all HTML files:
    ```javascript
-   content: ["*"]
+   content: ["./dist/*.html"]
    ```
 
 ---
