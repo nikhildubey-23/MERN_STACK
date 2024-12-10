@@ -81,7 +81,7 @@ Update the `package.json` file by adding the following script under the `"script
 ```json
 "scripts": {
   "start": "vite"
-}
+},
 ```
 
 ### Start the Development Server
