@@ -578,6 +578,10 @@ video {
   margin-top: 0.75rem;
 }
 
+.mt-2\.5 {
+  margin-top: 0.625rem;
+}
+
 .block {
   display: block;
 }
@@ -602,12 +606,20 @@ video {
   height: 2rem;
 }
 
+.h-9 {
+  height: 2.25rem;
+}
+
 .w-6 {
   width: 1.5rem;
 }
 
 .w-8 {
   width: 2rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 @keyframes slide-in {
@@ -642,12 +654,24 @@ video {
   animation: slide-in-reverse 1s ease-in-out 0.5s forwards;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .list-none {
   list-style-type: none;
 }
 
 .flex-col {
   flex-direction: column;
+}
+
+.place-content-center {
+  place-content: center;
+}
+
+.place-content-between {
+  place-content: space-between;
 }
 
 .items-start {
@@ -688,6 +712,10 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -712,6 +740,21 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.bg-indigo-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(67 56 202 / var(--tw-bg-opacity, 1));
+}
+
+.bg-slate-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity, 1));
+}
+
+.bg-slate-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 6 23 / var(--tw-bg-opacity, 1));
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -724,9 +767,23 @@ video {
   padding: 2.25rem;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .pb-1 {
@@ -741,6 +798,14 @@ video {
   padding-top: 0.25rem;
 }
 
+.pe-7 {
+  padding-inline-end: 1.75rem;
+}
+
+.ps-7 {
+  padding-inline-start: 1.75rem;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -749,6 +814,11 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -775,9 +845,18 @@ video {
   background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-indigo-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(99 102 241 / var(--tw-bg-opacity, 1));
+}
+
 @media (min-width: 768px) {
   .md\:block {
     display: block;
+  }
+
+  .md\:flex {
+    display: flex;
   }
 
   .md\:hidden {
