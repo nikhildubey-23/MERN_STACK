@@ -17,6 +17,9 @@ module.exports = {
         'slide-in': 'slide-in 1s ease-in-out 0.5s forwards',
         'slide-in-reverse': 'slide-in-reverse 1s ease-in-out 0.5s forwards',
       },
+      width:{
+        17 : "5rem"
+      }
     },
   },
   plugins: [],
