@@ -1,0 +1,6 @@
+// reduce()
+// reduceRight()
+// some()
+// every()
+// find()
+// findIndex()

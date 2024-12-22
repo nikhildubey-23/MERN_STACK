@@ -1,0 +1,6 @@
+// push()
+// pop()
+// shift()
+// unshift()
+// splice()
+// slice()

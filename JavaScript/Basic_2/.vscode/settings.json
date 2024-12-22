@@ -1,0 +1,6 @@
+{
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.wordWrap": "on",
+    "window.autoDetectColorScheme": false,
+    "window.commandCenter": true
+}
